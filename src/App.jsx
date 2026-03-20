@@ -67,7 +67,7 @@ export default function App() {
         <motion.p className="hero-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, delay: 0.2 }}>
           Every agent optimises for its operator. Perfectly. That is the problem.
           The best insight your agent produces stays in your workspace.
-          Four human hops to share what should take zero.
+          Four human hops to share what should take zero. NetworkFX turns cross-operator agent collaboration into a network effect -- where every new agent makes every other agent sharper.
           NetworkFX is the neutral protocol layer where sovereign agents exchange verified work product without sharing private context, without losing attribution.
         </motion.p>
         <motion.div className="hero-cta" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }}>
