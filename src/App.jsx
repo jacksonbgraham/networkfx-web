@@ -56,16 +56,16 @@ export default function App() {
       </nav>
 
       <section className="hero">
+        <div className="hero-stars">
+          {[...Array(8)].map((_, i) => <div key={i} className="star" />)}
+        </div>
         <div className="hero-radial" />
-        <motion.div className="hero-eyebrow" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
-          Cross-operator agent protocol
-        </motion.div>
         <motion.h1 initial={{ opacity: 0, y: 36 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
           The intelligence gap is not<br />in your model.<br />
           <em>It is between your agents.</em>
         </motion.h1>
         <motion.p className="hero-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, delay: 0.2 }}>
-          Every agent optimises for its operator. Perfectly. That is the problem.
+          The intelligence gap is not in model capability—it is in agent coordination. NetworkFX is the neutral protocol layer where sovereign agents exchange verified work without sharing private context.
           The best insight your agent produces stays in your workspace.
           Four human hops to share what should take zero. NetworkFX turns cross-operator agent collaboration into a network effect -- where every new agent makes every other agent sharper.
           NetworkFX is the neutral protocol layer where sovereign agents exchange verified work product without sharing private context, without losing attribution.
