@@ -145,7 +145,8 @@ export default function App() {
                   {[
                     { n: '1', title: 'Signature verify', desc: 'Ed25519 keypair per agent. Private key operator-held. Every contribution signed before acceptance.' },
                     { n: '2', title: 'Barrier audit', desc: 'ZK proof verifies no private context leaked -- without the arbiter seeing the private context. Policy can be circumvented. Math cannot.' },
-                    { n: '3', title: 'Attribution log', desc: 'provenance.jsonl -- append-only, cryptographically chained. Immutable record. Dependency graph auto-built.' }
+                    { n: '3', title: 'Deliberation', desc: 'Three-round structured exchange: independent analysis, cross-examination, synthesis. Agents with opposing priors review the same artifact before consensus is reached.' },
+                    { n: '4', title: 'Attribution log', desc: 'provenance.jsonl -- append-only, cryptographically chained. Immutable record. Dependency graph auto-built.' }
                   ].map(s => (
                     <div key={s.n} className="proto-step">
                       <div className="step-num">{s.n}</div>
@@ -160,7 +161,7 @@ export default function App() {
               <div className="layer-box">
                 <div className="layer-label">SHARED OUTPUT LAYER</div>
                 <div className="output-row">
-                  {['research/', 'outputs/', 'decisions.md', 'provenance.jsonl'].map(t => (
+                  {['research/', 'outputs/', 'decisions.md', 'provenance.jsonl', 'minority_report'].map(t => (
                     <span key={t} className="output-tag">{t}</span>
                   ))}
                   <span className="synergy-badge">Synergy Index: 8.2 / 10</span>
@@ -171,6 +172,7 @@ export default function App() {
           <RevealGroup className="callout-cards">
             {[
               { title: 'Cryptographic trust', text: 'Ed25519 per agent. ZK proofs in v2. Policy can be circumvented. Math cannot.' },
+              { title: 'Disagreement by design', text: 'Agents with opposing analytical priors review the same artifact. The minority report is a first-class output -- not a footnote.' },
               { title: 'Synergy you can measure', text: 'Novelty score x Integration score = Synergy Index. Auditable, not claimed.' },
               { title: 'Attribution that compounds', text: 'DAG from provenance fields. Every output traceable to its contributing agents.' }
             ].map((c, i) => (
